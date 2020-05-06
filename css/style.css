@@ -1,0 +1,188 @@
+/**************** GENERALITES *************/
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    color: #616161;
+}
+.text-profil
+{
+    color: #76FF03;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: solid;
+    font-size: 1.6em;
+}
+.contact_b, .for_me, .hobbies
+{
+    background-color: #616161;
+    padding-top: 5px;
+}
+hr 
+{
+    border-top: 3px solid #76FF03;
+}
+.text-cursus
+{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: black;
+}
+.text-cursus i
+{
+    font-size: 1.8em;
+    margin-right: 20px;
+    padding-top: 5px;
+    vertical-align: bottom;
+}
+h4 .fas
+{
+    color: #76FF03;
+}
+h6
+{
+    text-transform: uppercase;
+    color: black;
+}
+.definition
+{
+    font-style: italic;
+}
+aside, .content, .comp_content
+{
+    font-size: 1em;
+    text-align: justify;
+}
+h1, .job_subtitle
+{
+    padding-left: 40px;
+}
+section
+{
+    padding: 2% 5%;
+}
+
+/**************** ASIDE *************/
+
+aside
+{
+    background-color: #76FF03;
+}
+.photo_cc
+{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+.photo_cc img
+{
+    border: 5px solid rgba(245,245,245 ,0.6 );
+    max-width: 100%;
+}
+address
+{
+    padding: 5%;
+}
+.text_me
+{
+    padding: 5%;
+}
+.picto
+{
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.footer_picto
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+/**************** HEADER *************/
+
+header
+{
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+h1
+{
+    text-transform: uppercase;
+}
+.firstname
+{
+    color: #76FF03;
+}
+.dev
+{
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #76FF03;
+}
+
+/**************** SECTION FORMATION ET EXPERIENCE PROFESSIONNELLE *************/
+
+hr
+{
+    margin-bottom: 40px;
+}
+.dot_date, .dot
+{
+    color: #76FF03;
+    margin-right: 10px;
+}
+.dot
+{
+    font-size: 0.5em;
+}
+
+/**************** SECTION COMPETENCES *************/
+
+.comp_content
+{
+    padding: 5px 10px 0 0;
+    
+}
+.comp_div div
+{
+    border-right: 1px solid #76FF03;
+}
+.comp_div div:nth-child(4)
+{
+    border-right: none;
+}
+
+/**************** MEDIA QUERIES *************/
+
+@media (max-width: 768px)
+{
+.for_me, .text_me, .footer
+{
+    display: none;
+}
+aside
+{
+    font-size: 1.5em;
+}
+.content, .comp_content
+{
+    font-size: 1.2em;
+}
+h6, .definition
+{
+    font-size: 1.3em;
+}
+address, header
+{
+    text-align: center;
+}
+header
+{
+    margin: 5px auto;
+}
+.comp_div div
+{
+    border-right: none;
+}
+}
