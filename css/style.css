@@ -75,6 +75,14 @@ aside
     display: flex;
     justify-content: center;
 }
+.photo_cc:hover img
+{
+    -webkit-transform:scale(1.2); /* Safari et Chrome */
+    -moz-transform:scale(1.2); /* Firefox */
+    -ms-transform:scale(1.2); /* Internet Explorer 9 */
+    -o-transform:scale(1.2); /* Opera */
+    transform:scale(1.2);
+}
 .photo_cc img
 {
     border: 5px solid rgba(245,245,245 ,0.6 );
@@ -88,12 +96,23 @@ address
 {
     padding: 5%;
 }
+.loisirs
+{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.hobbies
+{
+    margin: 0;
+}
 .picto
 {
     margin-bottom: 40px;
     margin-top: 20px;
 }
-.footer_picto
+.loisirs_picto
 {
     display: flex;
     justify-content: space-around;
@@ -157,7 +176,7 @@ hr
 
 @media (max-width: 768px)
 {
-.for_me, .text_me, .footer
+.for_me, .text_me, .loisirs
 {
     display: none;
 }
