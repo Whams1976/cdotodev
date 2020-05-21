@@ -11,7 +11,7 @@ body
     text-transform: uppercase;
     text-align: center;
     text-decoration: solid;
-    font-size: 1.6em;
+    font-size: 1.2em;
 }
 .contact_b, .for_me, .hobbies
 {
@@ -20,46 +20,41 @@ body
 }
 hr 
 {
-    border-top: 3px solid #76FF03;
+    border-top: 2px solid #76FF03;
 }
 .text-cursus
 {
     text-transform: uppercase;
-    font-size: 1.2em;
     color: black;
+    position: relative;
 }
 .text-cursus i
 {
-    font-size: 1.8em;
-    margin-right: 20px;
-    padding-top: 5px;
-    vertical-align: bottom;
-}
-h4 .fas
-{
+    
+    font-size: 1.7em;
     color: #76FF03;
+    position: absolute;
 }
 h6
 {
     text-transform: uppercase;
-    color: black;
 }
 .definition
 {
     font-style: italic;
 }
-aside, .content, .comp_content
+.content, .comp_content, p
 {
-    font-size: 1em;
+    font-size: 0.8em;
     text-align: justify;
 }
 h1, .job_subtitle
 {
-    padding-left: 40px;
+    padding-left: 4%;
 }
 section
 {
-    padding: 2% 5%;
+    padding: 2% 4%;
 }
 
 /**************** ASIDE *************/
@@ -70,31 +65,27 @@ aside
 }
 .photo_cc
 {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 15%;
+    padding-bottom: 9%;
     display: flex;
     justify-content: center;
 }
 .photo_cc:hover img
 {
-    -webkit-transform:scale(1.2); /* Safari et Chrome */
-    -moz-transform:scale(1.2); /* Firefox */
-    -ms-transform:scale(1.2); /* Internet Explorer 9 */
-    -o-transform:scale(1.2); /* Opera */
-    transform:scale(1.2);
+    transform: scale(1.2);
 }
 .photo_cc img
 {
     border: 5px solid rgba(245,245,245 ,0.6 );
-    max-width: 100%;
+    max-width: 61%;
 }
 address
 {
-    padding: 5%;
+    padding: 8% 2% 2% 8%;
 }
 .text_me
 {
-    padding: 5%;
+    padding: 8%;
 }
 .loisirs
 {
@@ -112,6 +103,12 @@ address
     margin-bottom: 40px;
     margin-top: 20px;
 }
+.picto i
+{
+    border: 2px solid #616161;
+    border-radius: 50%;
+    padding: 5px;
+}
 .loisirs_picto
 {
     display: flex;
@@ -122,8 +119,8 @@ address
 
 header
 {
-    padding-top: 10%;
-    padding-bottom: 5%;
+    padding-top: 9%;
+    padding-bottom: 6%;
 }
 h1
 {
@@ -142,18 +139,33 @@ h1
 
 /**************** SECTION FORMATION ET EXPERIENCE PROFESSIONNELLE *************/
 
+h4 
+{
+    padding-left: 60px;
+    font-size: 1.3em;
+}
 hr
 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
-.dot_date, .dot
+.dot_date
 {
     color: #76FF03;
-    margin-right: 10px;
+    margin-right: 15px;
+    font-size: 0.9em;
 }
 .dot
 {
     font-size: 0.5em;
+    color: #76FF03;
+    margin-right: 15px;
+    position: relative;
+}
+.city
+{
+    position: absolute;
+    margin-left: 25px;
+    top: 15px;
 }
 
 /**************** SECTION COMPETENCES *************/
@@ -174,7 +186,7 @@ hr
 
 /**************** MEDIA QUERIES *************/
 
-@media (max-width: 768px)
+@media only screen and (max-width: 768px) or (orientation: portrait)
 {
 .for_me, .text_me, .loisirs
 {
