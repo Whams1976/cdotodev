@@ -161,7 +161,7 @@ hr
     margin-right: 15px;
     position: relative;
 }
-.city
+.city, .city_long
 {
     position: absolute;
     margin-left: 25px;
@@ -186,23 +186,41 @@ hr
 
 /**************** MEDIA QUERIES *************/
 
-@media only screen and (max-width: 768px) or (orientation: portrait)
+@media only screen and (max-width: 1029px)
 {
-.for_me, .text_me, .loisirs
+.city_long
 {
-    display: none;
+    margin-left: 25px;
+    top: 35px;
 }
-aside
+.line
 {
-    font-size: 1.5em;
+    display: block;
+    margin-left: 25px;
+}
+.competences
+{
+    font-size: 0.8em;
+}
+}
+
+@media (max-width: 767px)
+{
+.loisirs
+{
+    
+}
+address, .text_me
+{
+    font-size: 1.3em;
 }
 .content, .comp_content
 {
-    font-size: 1.2em;
+    font-size: 1em;
 }
-h6, .definition
+.definition
 {
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 address, header
 {
