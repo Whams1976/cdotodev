@@ -206,9 +206,15 @@ hr
 
 @media (max-width: 767px)
 {
+p
+{
+    font-size: 1em;
+}
 .loisirs
 {
-    
+    margin: -15px;
+    position: initial;
+    width: auto;
 }
 address, .text_me
 {
@@ -230,8 +236,27 @@ header
 {
     margin: 5px auto;
 }
+.media_mobile
+{
+    display: flex;
+}
+.city, .city_long
+{
+    position: inherit;
+    flex-direction: row;
+    top: initial;
+}
+.line
+{
+    display: initial;
+    margin-left: initial;
+}
 .comp_div div
 {
     border-right: none;
+}
+.competences
+{
+    font-size: initial;
 }
 }
